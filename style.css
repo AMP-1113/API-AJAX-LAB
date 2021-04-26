@@ -1,0 +1,32 @@
+body {
+    font-family: 'New Rocker', cursive;
+    background-color: black;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    margin: 5px auto;
+    width: 50%;
+}
+
+.img {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.url {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;;
+    margin-bottom: 30px;
+    border-bottom: 2px solid gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+}
+
+.url:hover {
+    color: red;
+    font-size: 1.25em;
+}
