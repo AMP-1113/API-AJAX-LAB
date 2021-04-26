@@ -12,7 +12,7 @@ fetch("https://www.reddit.com/r/aww/.json")
             const thumbnail = child.data.thumbnail;
             const url = child.data.url_overridden_by_dest;
 
-            const pageTitleEl = document.createElement("h1")
+            const pageTitleEl = document.createElement("h2")
             pageTitleEl.classList.add("title");
             pageTitleEl.innerText = title;
             container.appendChild(pageTitleEl);

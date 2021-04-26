@@ -3,6 +3,17 @@ body {
     background-color: black;
 }
 
+.header {
+    font-size: 3.5em;
+    color: black;
+    background-color: gray;
+    text-align: center;
+    margin: 5px auto;
+    width: 50%;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+
 .title {
     color: white;
     text-align: center;
