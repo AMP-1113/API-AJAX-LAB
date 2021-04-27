@@ -18,6 +18,10 @@ button.addEventListener("click", event => {
         const getPost = json.data.children;
         const getPost10 = getPost.slice(0, 10);
         const container = document.getElementById("blogPost");
+        const h2 = document.getElementById("h2");
+        
+        h2.innerText="Aww Subreddit"
+        h2.classList.add("header2");
         
         let counter = 0;
             for (let child of getPost10) {
@@ -54,6 +58,11 @@ button.addEventListener("click", event => {
         const getPost = json.data.children;
         const getPost10 = getPost.slice(0, 10);
         const container = document.getElementById("blogPost");
+
+        const h2 = document.getElementById("h2");
+        
+        h2.innerText="Funny Subreddit"
+        h2.classList.add("header2");
         
         let counter = 0;
             for (let child of getPost10) {
@@ -90,6 +99,11 @@ button.addEventListener("click", event => {
         const getPost = json.data.children;
         const getPost10 = getPost.slice(0, 10);
         const container = document.getElementById("blogPost");
+
+        const h2 = document.getElementById("h2");
+        
+        h2.innerText="Memes Subreddit"
+        h2.classList.add("header2");
         
         let counter = 0;
             for (let child of getPost10) {
