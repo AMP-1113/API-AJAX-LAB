@@ -23,7 +23,6 @@ button.addEventListener("click", event => {
         h2.innerText="Aww Subreddit"
         h2.classList.add("header2");
         
-        let counter = 0;
             for (let child of getPost10) {
                 
                 const title = child.data.title;
@@ -45,7 +44,7 @@ button.addEventListener("click", event => {
                 urlEl.href = url;
                 urlEl.innerHTML = url
                 container.appendChild(urlEl);
-                counter += 1;
+                
             
             }
 
@@ -64,7 +63,6 @@ button.addEventListener("click", event => {
         h2.innerText="Funny Subreddit"
         h2.classList.add("header2");
         
-        let counter = 0;
             for (let child of getPost10) {
                 
                 const title = child.data.title;
@@ -86,7 +84,6 @@ button.addEventListener("click", event => {
                 urlEl.href = url;
                 urlEl.innerHTML = url
                 container.appendChild(urlEl);
-                counter += 1;
             
             }
 
@@ -105,7 +102,6 @@ button.addEventListener("click", event => {
         h2.innerText="Memes Subreddit"
         h2.classList.add("header2");
         
-        let counter = 0;
             for (let child of getPost10) {
                 
                 const title = child.data.title;
@@ -127,7 +123,6 @@ button.addEventListener("click", event => {
                 urlEl.href = url;
                 urlEl.innerHTML = url
                 container.appendChild(urlEl);
-                counter += 1;
             
             }
         });
