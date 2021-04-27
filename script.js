@@ -2,14 +2,15 @@ let aww = "https://www.reddit.com/r/aww/.json";
 let funny = "https://www.reddit.com/r/funny/.json";
 let memes = "https://www.reddit.com/r/memes/.json";
 const button = document.getElementById("go");
-const makeElement = () => {
-    fetch(aww)
+const makeElement = (apiURL) => {
+    fetch(apiURL)
     .then(response => response.json())
     .then(json => {
 
         const getPost = json.data.children;
         const getPost10 = getPost.slice(0, 10);
         const container = document.getElementById("blogPost");
+        container.innerHTML = "";
         
             for (let child of getPost10) {
                 
@@ -30,7 +31,7 @@ const makeElement = () => {
                 const urlEl = document.createElement("a");
                 urlEl.classList.add("url");
                 urlEl.href = url;
-                urlEl.innerHTML = url
+                urlEl.innerText = url;
                 container.appendChild(urlEl); 
             
             }
@@ -43,17 +44,17 @@ button.addEventListener("click", event => {
     let inputValue = document.getElementById("inputNewSubreddit").value;
   
     if (inputValue === "aww") {
-        makeElement();
+        makeElement(aww);
         const h2 = document.getElementById("h2");
         h2.innerText="Aww Subreddit"
         h2.classList.add("header2");
     } else if (inputValue === "funny") {
-        makeElement();
+        makeElement(funny);
         const h2 = document.getElementById("h2");
         h2.innerText="Funny Subreddit"
         h2.classList.add("header2");
     } else if (inputValue === "memes") {
-        makeElement();
+        makeElement(memes);
         const h2 = document.getElementById("h2");
         h2.innerText="Memes Subreddit"
         h2.classList.add("header2");
